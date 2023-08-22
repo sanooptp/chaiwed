@@ -16,6 +16,17 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" />
 	</noscript>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<style>
+		.material-symbols-outlined {
+			font-variation-settings:
+				'FILL' 0,
+				'wght' 400,
+				'GRAD' 0,
+				'opsz' 48
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -37,49 +48,59 @@
 	<!-- Intro -->
 	<section id="intro" class="main style1 dark fullscreen">
 		<div class="parent-container">
-			<div class="child one">
-				<img src="images/carly-rae-hobbins-zNHOIzjJiyA-unsplash.jpg" alt="">
+			<div class="overlay-image child">
+				<img class="leaf" src="images/pngwing.com (6).png" alt="leaf">
 			</div>
-
-			<div class="child two">
-				<div class="leaf">
-					<img src="images/pngwing.com (5).png" alt="">
-				</div>
-				<div class="overlay-image">
-					<img src="images/pngwing.com (6).png" alt="">
-				</div>
-				<div class="overlay-image two">
-					<img src="images//pngwing.com (13).png" alt="">
-				</div>
-
+			<div class="child fade-in-text" id="front-title">
+				<span class="intro-title">Chaithra</span>
+				<br><br>
+				<span class="intro-title and">&</span>
+				<span class="intro-title">Anoop</span>
+			</div>
+			<div class="child mark_date">
+				<span>Mark the Calender</span>
+			</div>
+			<div class="child date">
+				<span>SUN</span>
+				<span class="date_digit">|03|</span>
+				<span>SEP</span>
 
 			</div>
-			<div class="child">
-				<span class="front-title one">Chaithra</span>
-				<span class="front-title and">And</span>
-				<span class="front-title two">Anoop</span>
+			<div class="child date-icon">
+				<a
+					href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Chaithra And Anoop Wedding&details= text&dates=20230903T110000/20230903T140000&location=Thazhathu House, Alakode">
+					<button id="addToGoogleCalendarButton">
+						<span class="material-symbols-outlined">
+							calendar_add_on
+						</span></button></a>
 			</div>
-			<div class="child-one">
+			<!-- <div class="child quote">
+				<div class="typewriter">
+					<p></p>
+				</div>
+			</div> -->
+
+			<!-- <div class="">
 				<h5 class="timer">
 					<p id="timer">
-						<span id="days">00</span> 
-						<span id="hours">00</span> 
-						<span id="minutes">00</span> 
-						<span id="seconds">00</span> 
-						<p class="timer-text">
-							<span class="days">Days</span> 
-							<span class="hours">hours</span> 
-							<span class="minutes">Minutes</span> 
-							<span class="seconds">Seconds</span> 
-						</p>
+						<span id="days">00</span>
+						<span id="hours">00</span>
+						<span id="minutes">00</span>
+						<span id="seconds">00</span>
+					<p class="timer-text">
+						<span class="days">Days</span>
+						<span class="hours">hours</span>
+						<span class="minutes">Minutes</span>
+						<span class="seconds">Seconds</span>
+					</p>
 					</p>
 				</h5>
-			</div>
-			<div class="child three">
+			</div> -->
+			<!-- <div class="child three">
 				<button>ASVP</button>
-			</div>
-			
-			<div class="child-one">
+			</div> -->
+
+			<div class="child footer">
 				<footer>
 					<a href="#one" style="color: black;" class="button style2 down">More</a>
 				</footer>
@@ -93,21 +114,11 @@
 	<!-- One -->
 	<section id="one" class="main style2 right dark fullscreen">
 		<div class="content box style2">
-			<header>
-				<h2>What I Do</h2>
-			</header>
+			
 
-			<div class="centered-box">
-				<div class="image-box">
-					<img src="images/pexels-jonathan-borba-2917380.jpg" alt="">
-				</div>
-			</div>
-
-			<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-				Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-				id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+			
 		</div>
-		<a href="#two" class="button style2 down anchored">Next</a>
+		<button><a href="#two" class="button style2 down anchored">Next</a></button>
 	</section>
 
 	<!-- Two -->

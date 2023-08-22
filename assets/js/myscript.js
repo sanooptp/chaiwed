@@ -40,4 +40,48 @@ function startTimer(endDate, display) {
   });
   
 
+  const textArray = [
+    "I choose you.",
+    "And I'll choose you over and over and over.",
+    "Without pause, without a doubt, in a heartbeat.",
+    "I'll keep choosing you."
+  ];
   
+  const typewriter = document.querySelector(".typewriter .line");
+  let lineIndex = 0;
+  let charIndex = 0;
+  
+  function typeText() {
+    if (lineIndex < textArray.length) {
+      const currentLine = textArray[lineIndex];
+      typewriter.textContent = currentLine.substring(0, charIndex);
+      charIndex++;
+      if (charIndex > currentLine.length) {
+        charIndex = 0;
+        lineIndex++;
+        setTimeout(typeText, 1000); // Delay between lines
+      } else {
+        setTimeout(typeText, 100); // Typing speed within a line
+      }
+    }
+  }
+  
+  typeText();
+  
+
+document.getElementById('addToGoogleCalendarButton').addEventListener('click', function() {
+    var eventTitle = 'Chaithra&Anoop Wedding';
+    var eventDate = '2023-09-03'; // Format: YYYY-MM-DD
+    var eventStartTime = '11:00'; // Format: HH:MM (24-hour)
+    var eventEndTime = '14:00'; // Format: HH:MM (24-hour)
+    var eventLocation = 'Thazhathu House';
+    var eventDetails = 'Chaitra&Anoop Wedding';
+
+    var googleCalendarUrl = 'https://www.google.com/calendar/render?action=TEMPLATE' +
+      '&text=' + encodeURIComponent(eventTitle) +
+      '&dates=' + encodeURIComponent(eventDate + 'T' + eventStartTime + '00Z/' + eventDate + 'T' + eventEndTime + '00Z') +
+      '&location=' + encodeURIComponent(eventLocation) +
+      '&details=' + encodeURIComponent(eventDetails);
+
+    window.open(googleCalendarUrl, '_blank');
+  });
