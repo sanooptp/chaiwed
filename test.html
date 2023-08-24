@@ -1,55 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
   <style>
-   .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
 
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
+    .carousel {
+      position: relative;
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+    }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
+    .carousel-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Animation */
+    @keyframes carouselAnimation {
+
+      0%,
+      100% {
+        opacity: 0;
+      }
+
+      20%,
+      80% {
+        opacity: 1;
+      }
+    }
   </style>
-  <script>
-    const text = "Welcome to our wedding celebration!";
-const textContainer = document.querySelector(".animated-text");
-
-function typeText(index) {
-  if (index < text.length) {
-    textContainer.textContent += text[index];
-    index++;
-    setTimeout(() => typeText(index), 100); // Adjust the typing speed here
-  }
-}
-
-typeText(0);
-
-  </script>
-  <title>Typing Animation</title>
+ 
+  <title>Auto Image Fade Carousel</title>
 </head>
+
 <body>
-  <div class="typewriter">
-    <h1>The cat and the hat.</h1>
+  <div class="carousel">
+    <div class="carousel-item">
+      <img src="images/background.png" alt="Image 1">
+    </div>
+    <div class="carousel-item">
+      <img src="images/couple.JPG" alt="Image 2">
+    </div>
+    <div class="carousel-item">
+      <img src="images/intro.jpeg" alt="Image 3">
+    </div>
   </div>
+  <script>
+    const carouselItems = document.querySelectorAll('.carousel-item');
+ let currentItem = 0;
+ 
+ function showNextItem() {
+     carouselItems[currentItem].style.opacity = '0';
+     currentItem = (currentItem + 1) % carouselItems.length;
+     carouselItems[currentItem].style.opacity = '1';
+ }
+ 
+ setInterval(showNextItem, 3000); // Change image every 3 seconds
+ 
+ 
+   </script>
 </body>
+
 </html>
-
-

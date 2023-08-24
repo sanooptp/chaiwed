@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Raleway+Dots&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Raleway+Dots&family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+SC:wght@300&family=Raleway+Dots&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 
 @font-face {
@@ -2395,7 +2396,7 @@ body.is-touch .main {
 /* One */
 
 #one {
-	background: url("images/overlay.png"), url("../../images/one.jpg");
+	background: url("images/"), url("../../images/");
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, center center;
@@ -2404,7 +2405,7 @@ body.is-touch .main {
 /* Two */
 
 #two {
-	background: url("images/overlay.png"), url("../../images/two.jpg");
+	background: url("images/"), url("../../images/thrid_page.jpg");
 	background-size: 256px 256px, cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, center center;
@@ -2497,6 +2498,7 @@ body.is-touch .main {
 .child {
 	/* flex: 1; */
 	color: black;
+	text-align: center;
 }
 
 .gradient-overlay {
@@ -2545,33 +2547,41 @@ body {
 
 .timer {
 	font-size: 60px;
-	color: grey;
+	color: white;
+	padding-top: 6%;
 }
 
 .timer-text {
-	font-size: 17px;
+	font-size: 30%;
 	text-align: start;
 }
 
-.timer p {
+.timer-digit {
 	margin: 0;
 	padding-top: 2%;
+	font-family: "CustomFont";
+	font-size: 130px;
+}
+
+.child.timer {
+	height: 14%;
+	background-color: #88bc82;
 }
 
 .days {
-	padding-left: 23%;
+	padding-left: 10%;
 }
 
 .hours {
-	padding-left: 6%;
+	padding-left: 14%;
 }
 
 .minutes {
-	padding-left: 4%;
+	padding-left: 13%;
 }
 
 .seconds {
-	padding-left: 3%;
+	padding-left: 9%;
 }
 
 .child.three {
@@ -2673,12 +2683,6 @@ font-family: 'Roboto Mono', monospace;
 	padding-top: 40%;
 }
 
-
-
-
-
-
-
 @media (max-width: 767px)  {
 	body {
 		width: 100%;
@@ -2709,3 +2713,147 @@ font-family: 'Roboto Mono', monospace;
 		padding-top: 27%;
 	}
 }
+
+
+  
+  .child.image-corousel {
+	width: 80%;
+    height: 40%;
+    background-color: #f0f0f0;
+    margin-top: 5%;
+    margin-left: 10%;
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+	border-radius: 4%;
+  }
+
+  .image-box {
+	/* padding: 10%; */
+	padding-bottom: 20%;
+  }
+
+  .child.see-you{
+	font-size: 16px;
+    font-family: 'Material Symbols Outlined';
+  }
+
+  .child.muhoortham {
+	font-family: "CustomFont";
+	color: black;
+	font-size: 109px;
+    margin-top: 26%;
+	z-index: 1;
+  }
+
+  .muhoortham_time {
+	/* font-family: Roboto Mono; */
+	font-family: 'Orbitron', sans-serif;
+	font-size: 31px;
+    color: burlywood;
+    padding-top: 15%;
+  }
+
+  .child.flower2 {
+	z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .child.child.flower3 {
+	z-index: 1;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 108%;
+    opacity: 90%;
+	animation: rotateAnimation 4s linear infinite;
+  }
+
+  @keyframes rotateAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+  
+
+  .child.flower4 {
+	z-index: 2;
+    margin-left: 50%;
+    position: absolute;
+    margin-top: 181%;
+    opacity: 48%;
+    margin-right: 0;
+  }
+
+   .child.flower4 img{
+	width: 45%;
+   }
+
+  .child.flower2 img{
+	/* width: 278px; */
+	opacity: 74%;
+	animation: rotateAnimation 5s infinite alternate ease-in-out;
+  }
+
+  @keyframes rotateAnimation {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(3deg);
+    }
+}
+
+
+/* Image carousel */
+.carousel {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+  }
+
+  .carousel-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+  }
+
+  .carousel-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+
+  /* Animation */
+  @keyframes carouselAnimation {
+
+	0%,
+	100% {
+	  opacity: 0;
+	}
+
+	20%,
+	80% {
+	  opacity: 1;
+	}
+  }
+
+  .carousel-text {
+	font-family: 'Roboto Mono';
+    font-size: 22px;
+    color: gray;
+    margin-top: 7%;
+  }
+
+
+  .child.venue {
+	color: black;
+	font-family: CustomFont;
+	font-size: 100px;
+  }
