@@ -23,9 +23,19 @@
 
 @font-face {
 	font-family: 'Salvetica';
-	src: url("../../assets/webfonts/Salvetica-ZV6M3.ttf") format('truetype');s
+	src: url("../../assets/webfonts/Salvetica-ZV6M3.ttf") format('truetype');
 }
 
+
+@font-face {
+	font-family: 'Peristiwa';
+	src: url("../../assets/webfonts/Peristiwa-BF64723cfa7f6a9.otf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Peristiwa';
+	src: url("../../assets/webfonts/Melya-K7rPo.ttf") format('truetype');
+}
 
 
 /*
@@ -2730,21 +2740,50 @@ font-family: 'Roboto Mono', monospace;
 	}
 }
 
-
+.horizontal-time {
+	position: absolute;
+    margin-left: 60%;
+    margin-top: 10%;
+	color: black;
+	font-size: 100px;
+	font-family: Merliha;
+}
   
   .child.image-corousel {
-	width: 80%;
-    height: 40%;
+	width: 48%;
+    height: 39%;
     background-color: #f0f0f0;
     margin-top: 5%;
     margin-left: 10%;
-	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
-	border-radius: 4%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.3);
+	display: flex;
+  }
+
+  .wedding-time {
+	padding-left: 30%;
+  }
+
+  .wedding-dot{
+
+  }
+
+  .wedding-second{
+
+
+  }
+
+  .wedding-timezone {
+
   }
 
   .image-box {
 	/* padding: 10%; */
 	padding-bottom: 20%;
+	flex: 1;
+  }
+
+  .wedding-time{
+	flex: 1;
   }
 
   .child.see-you{
@@ -2845,7 +2884,7 @@ font-family: 'Roboto Mono', monospace;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: 100%;
+	/* border-radius: 100%; */
   }
 
   /* Animation */
@@ -2871,10 +2910,10 @@ font-family: 'Roboto Mono', monospace;
 
 
   .child.venue {
-	color: black;
-	font-family: CustomFont;
-	font-size: 100px;
-	margin-top: 15%;
+	font-family: Peristiwa;
+    font-size: 100px;
+    margin-top: 30%;
+    color: goldenrod;
   }
 
   .child.venue_leaf {
@@ -2890,6 +2929,7 @@ font-family: 'Roboto Mono', monospace;
 	font-family: 'Skinny';
 	font-size: 23px;
     padding-top: 10%;
+	line-height: 160%;
   }
 
   .child.footer.one {
@@ -2977,4 +3017,30 @@ font-family: 'Roboto Mono', monospace;
 	opacity: 50%;
   }
 
+  .button-nav {
+	--font-color: #323232;
+    --bg-color: #fff;
+    --main-color: #323232;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    text-align: left;
+    padding-right: 11%;
+  }
   
+  .button-nav:active {
+	box-shadow: 0px 0px var(--main-color);
+	transform: translate(3px, 3px);
+  }
+
+  .button-nav img{
+	width: 19%;
+    position: absolute;
+    padding-top: 6%;
+    padding-left: 2%;
+  }
