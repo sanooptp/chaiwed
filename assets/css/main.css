@@ -4,11 +4,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Raleway+Dots&family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cormorant+SC:wght@300&family=Raleway+Dots&family=Roboto+Mono:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One'); 
 
 
 @font-face {
 	font-family: 'CustomFont';
 	src: url("../../assets/webfonts/Boheme_Floral.ttf") format('truetype');
+}
+@font-face {
+	font-family: 'Skinny';
+	src: url("../../assets/webfonts/saxvon.ttf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Merliha';
+	src: url("../../assets/webfonts/Merliha-Italic-BF64cb2db76e9e2.otf") format('truetype');
+}
+
+@font-face {
+	font-family: 'Salvetica';
+	src: url("../../assets/webfonts/Salvetica-ZV6M3.ttf") format('truetype');s
 }
 
 
@@ -2184,6 +2199,7 @@ body.is-touch .poptrox-popup .closer {
 
 .main.style3.primary {
 	background: #ffffff;
+	height: 100%;
 }
 
 .main.style3.secondary {
@@ -2548,7 +2564,7 @@ body {
 .timer {
 	font-size: 60px;
 	color: white;
-	padding-top: 6%;
+	/* padding-top: 6%; */
 }
 
 .timer-text {
@@ -2564,8 +2580,8 @@ body {
 }
 
 .child.timer {
-	height: 14%;
-	background-color: #88bc82;
+	/* height: 14%; */
+	background-color: #9fc9aa;
 }
 
 .days {
@@ -2680,7 +2696,7 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .child.footer {
-	padding-top: 40%;
+	/* padding-top: 40%; */
 }
 
 @media (max-width: 767px)  {
@@ -2733,23 +2749,24 @@ font-family: 'Roboto Mono', monospace;
 
   .child.see-you{
 	font-size: 16px;
-    font-family: 'Material Symbols Outlined';
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-top: 18%;
   }
 
   .child.muhoortham {
 	font-family: "CustomFont";
 	color: black;
-	font-size: 109px;
-    margin-top: 26%;
+	font-size: 100px;
+    margin-top: 18%;
 	z-index: 1;
   }
 
   .muhoortham_time {
-	/* font-family: Roboto Mono; */
-	font-family: 'Orbitron', sans-serif;
-	font-size: 31px;
-    color: burlywood;
-    padding-top: 15%;
+	font-family: 'Merliha';
+    font-size: 31px;
+    color: saddlebrown;
+    padding-top: 10%;
+    font-weight: bold;
   }
 
   .child.flower2 {
@@ -2759,12 +2776,12 @@ font-family: 'Roboto Mono', monospace;
     left: 0;
   }
 
-  .child.child.flower3 {
+  .child.flower3 {
 	z-index: 1;
     position: absolute;
     margin-left: 36%;
     margin-top: 108%;
-    opacity: 90%;
+    opacity: 57%;
 	animation: rotateAnimation 4s linear infinite;
   }
 
@@ -2828,6 +2845,7 @@ font-family: 'Roboto Mono', monospace;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-radius: 100%;
   }
 
   /* Animation */
@@ -2856,4 +2874,107 @@ font-family: 'Roboto Mono', monospace;
 	color: black;
 	font-family: CustomFont;
 	font-size: 100px;
+	margin-top: 15%;
   }
+
+  .child.venue_leaf {
+	z-index: 2;
+    /* margin-left: 50%;
+    position: absolute;
+    margin-top: 181%;
+    opacity: 48%;
+    margin-right: 0; */	
+  }
+
+  .child.address {
+	font-family: 'Skinny';
+	font-size: 23px;
+    padding-top: 10%;
+  }
+
+  .child.footer.one {
+	margin-top: 40%;
+  }
+
+  .child.we-are {
+	font-family: CustomFont;
+	font-size: 70px;
+
+  }
+
+  .child.bride_groom {
+	text-align: unset;
+	display: flex;
+  }	
+
+  .child.horizontal-flex {
+	flex: 1;
+  }
+
+  .bride{
+	margin-left: 10%;
+	text-align: center;
+  }
+  .bride img{
+	opacity: 50%;
+  }
+
+  .name {
+	font-family: 'Courier New', Courier, monospace;
+	color: #515257;
+	
+  }
+
+  .child.flower5 {
+	position: absolute;
+	}
+
+.child.child.flower6 {
+	position: absolute;
+    margin-left: 70%;
+    margin-top: 31%;
+    opacity: 90%;
+}
+
+.child.couple-quote {
+	width: 50%;
+    font-size: 13px;
+    text-align: left;
+    font-family: 'Roboto Mono';
+    color: gray;
+    margin-top: 42%;
+    margin-left: 3%;
+	
+}
+
+.quote-anime {
+	animation: typing 5s steps(60) forwards, blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 100%;
+	}
+  }
+  
+  @keyframes blink-caret {
+	from, to {
+	  border-color: transparent;
+	}
+	50% {
+	  border-color: #000;
+	}
+  }
+
+  .child.location {
+	padding-top: 10%;
+  }
+
+  .child.venue_flower {
+	position: absolute;
+	opacity: 50%;
+  }
+
+  
