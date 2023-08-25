@@ -2708,15 +2708,10 @@ font-family: 'Roboto Mono', monospace;
 
 .child.footer {
 	/* padding-top: 40%; */
+	z-index: 1;
 }
 
-@media (max-width: 767px)  {
-	body {
-		width: 100%;
-		/* Set the body width to 100% for mobile view */
-		/* Add other mobile-specific styles here */
-	}
-}
+
 
 /* Desktop View Styles */
 @media (min-width: 768px) {
@@ -2732,7 +2727,7 @@ font-family: 'Roboto Mono', monospace;
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 375px) {
 	.child.mark_date {
 		margin-top: 20%;
 	}
@@ -2740,6 +2735,7 @@ font-family: 'Roboto Mono', monospace;
 		padding-top: 27%;
 	}
 }
+
 
 .horizontal-time {
 	position: absolute;
@@ -3002,6 +2998,7 @@ font-family: 'Roboto Mono', monospace;
 
   .child.flower5 {
 	position: absolute;
+	animation: rotateAnimation 5s infinite alternate ease-in-out;
 	}
 
 .child.child.flower6 {
@@ -3009,15 +3006,16 @@ font-family: 'Roboto Mono', monospace;
     margin-left: 70%;
     margin-top: 31%;
     opacity: 90%;
+	animation: rotateAnimation 5s infinite alternate ease-in-out;
 }
 
 .child.couple-quote {
 	width: 50%;
-    font-size: 13px;
+    font-size: 17px;
     text-align: left;
-    font-family: 'Roboto Mono';
+    font-family: monospace;
     color: gray;
-    margin-top: 42%;
+    margin-top: 43%;
     margin-left: 3%;
 	
 }
@@ -3119,7 +3117,7 @@ font-family: 'Roboto Mono', monospace;
   .child.flower8 {
     position: absolute;
     opacity: 74%;
-    margin-top: 158%;  }
+    margin-top: 152%;  }
 
   .child.flower9 {
 	position: absolute;
@@ -3196,6 +3194,7 @@ font-family: 'Roboto Mono', monospace;
     align-items: center;
     justify-content: center;
     display: flex;
+	opacity: 50%;
   }
 
   .social-icons {
