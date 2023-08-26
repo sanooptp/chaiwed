@@ -2942,7 +2942,7 @@ font-family: 'Roboto Mono', monospace;
   .child.venue {
 	font-family: Peristiwa;
     font-size: 100px;
-    margin-top: 30%;
+    margin-top: 14%;
     color: goldenrod;
   }
 
@@ -3015,7 +3015,7 @@ font-family: 'Roboto Mono', monospace;
     text-align: left;
     font-family: monospace;
     color: gray;
-    margin-top: 43%;
+    margin-top: 30%;
     margin-left: 3%;
 	
 }
@@ -3079,7 +3079,7 @@ font-family: 'Roboto Mono', monospace;
   }
 
   .child.footer.two {
-	padding-top: 10%;
+	padding-top: 20%;
   }
 
   .video-container{
@@ -3117,7 +3117,7 @@ font-family: 'Roboto Mono', monospace;
   .child.flower8 {
     position: absolute;
     opacity: 74%;
-    margin-top: 152%;  }
+    margin-top: 110%;  }
 
   .child.flower9 {
 	position: absolute;
@@ -3126,6 +3126,7 @@ font-family: 'Roboto Mono', monospace;
 
   .child.flower9 img{
 	width: 50%;
+	animation: rotateAnimation 5s infinite alternate ease-in-out;
   }
 
   .child.flower10 {
@@ -3133,6 +3134,7 @@ font-family: 'Roboto Mono', monospace;
     margin-left: 22%;
     margin-top: 49%;
     opacity: 31%;
+	animation: rotateAnimation 5s infinite alternate ease-in-out;
   }
 
   .muhoortham-hif {
@@ -3251,13 +3253,13 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .flower11 {
-    margin-top: 176%;
+    margin-top: 144%;
     rotate: -1deg;
 	animation: rotateAnimation 5s infinite alternate ease-in-out;
 }
 
 .flower12 {
-	padding-top: 107%;
+	padding-top: 90%;
     padding-left: 62%;
     opacity: 51%;
     rotate: -15deg;
