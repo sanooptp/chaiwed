@@ -3223,18 +3223,19 @@ font-family: 'Roboto Mono', monospace;
   }
 
   .child.special-events-title {
-	font-size: 32px;
-    font-family: 'Skinny';
+	font-size: 69px;
+    font-family: Blaze;
     PADDING-TOP: 17%;
+    color: #a8a808;
   }
 
-  .speacial-dates {
+  .special-dates {
 	font-family: 'Skinny';
     color: gray;
     font-size: 19px;  
 }
 
-.speacial-time {
+.special-time {
 	font-family: 'Skinny';
     color: #d1c002;
     font-size: 34px;
@@ -3259,8 +3260,8 @@ font-family: 'Roboto Mono', monospace;
 }
 
 .flower12 {
-	padding-top: 90%;
-    padding-left: 62%;
+	margin-top: 90%;
+    margin-left: 77%;
     opacity: 51%;
     rotate: -15deg;
 	animation: rotateAnimation 5s infinite alternate ease-in-out;
@@ -3390,3 +3391,4 @@ font-family: 'Roboto Mono', monospace;
 #five {
 	height: 100%;
 }
+
