@@ -3143,7 +3143,7 @@ font-family: 'Roboto Mono', monospace;
   .child.see-you-soon {
 	font-family: 'Salvetica';
     font-size: 61px;
-    margin-top: 29%;
+    margin-top: 23%;
   }
 
   .load-row {
@@ -3188,7 +3188,7 @@ font-family: 'Roboto Mono', monospace;
   }
 
   .child.creator {
-	margin-top: 44%;
+	margin-top: 30%;
     color: black;
     font-family: 'Source Sans Pro';
     align-items: center;
