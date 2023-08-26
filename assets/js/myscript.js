@@ -121,5 +121,3 @@ function animateImageOnScroll() {
     }
 }
 
-// Add a scroll event listener to trigger the animation
-window.addEventListener('scroll', animateImageOnScroll);
