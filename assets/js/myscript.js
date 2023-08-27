@@ -121,8 +121,3 @@ function animateImageOnScroll() {
     }
 }
 
-
-
-
-
-
